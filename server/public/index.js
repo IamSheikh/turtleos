@@ -11,6 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
     window.username = document.getElementById('username').value;
     window.userpassword = document.getElementById('userpassword').value;
     app.innerHTML = '<login-page></login-page>';
+    const login_form = document.getElementById('login_form');
+    login_form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const loginPassword = document.querySelector('#login_form input');
+      if (loginPassword.value == window.userpassword) {
+        console.log('Successfully Logged In');
+      } else {
+        console.log('Please enter correct password');
+      }
+    });
   });
 });
 

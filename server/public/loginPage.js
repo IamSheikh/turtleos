@@ -5,8 +5,10 @@ class LoginPage extends HTMLElement {
     this.innerHTML = `
             <div id="login_page">
                 <h1>${username}</h1>
-                <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password..." class="input" required />
-                <button class="main-btn">Login</button>
+                <form class="login_form">
+                  <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password..." class="input" required />
+                  <button class="main-btn">Login</button>
+                </form>
             </div>
         `;
   }

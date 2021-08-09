@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const login_form = document.getElementById('login_form');
     login_form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const loginPassword = document.querySelector('#login_form input');
+      const loginPassword = document.getElementById('loginPassword');
       if (loginPassword.value == window.userpassword) {
         console.log('Successfully Logged In');
       } else {

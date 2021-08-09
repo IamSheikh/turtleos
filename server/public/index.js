@@ -23,8 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const loginPassword = document.getElementById('loginPassword');
       if (loginPassword.value == window.userpassword) {
+        speak(`Welcome ${window.name}`);
         console.log('Successfully Logged In');
       } else {
+        speak('Please enter correct password');
         console.log('Please enter correct password');
       }
     });

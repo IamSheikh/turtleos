@@ -8,8 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const install_form = document.getElementById('install_form');
   install_form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const username = document.getElementById('username').value;
-    const userpassword = document.getElementById('userpassword').value;
+    window.username = document.getElementById('username').value;
+    window.userpassword = document.getElementById('userpassword').value;
     app.innerHTML = '<login-page></login-page>';
   });
 });
+
+export default window.username;

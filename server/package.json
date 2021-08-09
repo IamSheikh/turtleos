@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Very simple os",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TahiJameel/turtleos.git"
+  },
+  "author": "Sheikh Taha Jameel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TahiJameel/turtleos/issues"
+  },
+  "homepage": "https://github.com/TahiJameel/turtleos#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

@@ -15,3 +15,19 @@
 .main-btn {
   padding: 0.5rem;
 }
+
+#login_page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login_page h1 {
+  margin-bottom: 1rem;
+}
+
+#login_page input {
+  margin-bottom: 1rem;
+}

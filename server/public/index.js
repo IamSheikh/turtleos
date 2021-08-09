@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     const username = document.getElementById('username').value;
     const userpassword = document.getElementById('userpassword').value;
-    console.log(`UserName: ${username} Password: ${userpassword}`);
+    app.innerHTML = '<login-page></login-page>';
   });
 });

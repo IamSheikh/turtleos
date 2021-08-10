@@ -1,4 +1,4 @@
-class Desktop extends HTMLElement {
+class DesktopPage extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <h1>Desktop</h1>
@@ -6,4 +6,4 @@ class Desktop extends HTMLElement {
   }
 }
 
-customElements.define('desktop', Desktop);
+customElements.define('desktop-page', DesktopPage);

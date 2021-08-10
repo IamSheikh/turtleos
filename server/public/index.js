@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const loginPassword = document.getElementById('loginPassword');
       if (loginPassword.value == window.userpassword) {
         speak(`Welcome ${window.name}`);
-        app.innerHTML = '<desktop></desktop>';
+        app.innerHTML = '<desktop-page></desktop-page>';
         console.log('Successfully Logged In');
       } else {
         speak('Please enter correct password');

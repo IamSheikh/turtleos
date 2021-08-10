@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   app.innerHTML = '<install-page></install-page>';
   const install_form = document.getElementById('install_form');
   install_form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     window.name = document.getElementById('name').value;
     window.username = document.getElementById('username').value;
     window.userpassword = document.getElementById('userpassword').value;

@@ -8,6 +8,20 @@ function speak(textForSpeak) {
   synth.speak(textToSpeak);
 }
 
+function openTerminalBtn() {
+  const openTerminalBtn = document.createElement('button');
+  openTerminalBtn.className = 'openTerminalBtn';
+  openTerminalBtn.style.backgroundColor = 'red';
+  openTerminalBtn.style.color = 'white';
+  openTerminalBtn.style.padding = '1rem';
+  openTerminalBtn.style.border = 'none';
+  openTerminalBtn.style.marginLeft = '0.5rem';
+  openTerminalBtn.style.marginRight = '0.5rem';
+  openTerminalBtn.style.cursor = 'pointer';
+  openTerminalBtn.textContent = 'Open Terminal';
+  document.body.append(openTerminalBtn);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const app = document.getElementById('app');
   app.innerHTML = '<install-page></install-page>';

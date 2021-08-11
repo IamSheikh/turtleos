@@ -47,7 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
           switch (cli) {
             case 'pwd':
               document.querySelector('desktop-page').style.display = 'none';
-              new Response('Hello', responseDiv);
+              new Response(
+                `${window.username}${window.name.split(' ').join('')}-TurtleOS`,
+                responseDiv
+              );
               openTerminalBtn();
               break;
           }

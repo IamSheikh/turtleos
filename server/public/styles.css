@@ -31,3 +31,17 @@
 #login_page input {
   margin-bottom: 1rem;
 }
+
+#apps {
+  margin: 0.5rem 2rem 2rem 2rem;
+}
+
+.apps .icon {
+  font-size: 10rem;
+  cursor: pointer;
+}
+
+.apps .app-text {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
